@@ -8,7 +8,7 @@
 
 /* ── Constants ──────────────────────────────────────────────── */
 const CANDLE_COUNT       = 5;
-const BLOW_RMS_THRESHOLD = 1;    // 0–255 scale
+const BLOW_RMS_THRESHOLD = 30;    // 0–255 scale
 const BLOW_SUSTAIN_MS    = 175;   // ms of continuous blow to extinguish one candle
 const METER_SMOOTH       = 0.72;  // exponential smoothing factor (0–1)
 const CONFETTI_COUNT     = 120;
