@@ -22,8 +22,8 @@
 ══════════════════════════════════════════════════════════════ */
 
 const CANDLE_COUNT       = 5;
-const BLOW_RMS_THRESHOLD = 1;
-const BLOW_SUSTAIN_MS    = 250;
+const BLOW_RMS_THRESHOLD = 52;
+const BLOW_SUSTAIN_MS    = 200;
 const METER_SMOOTH       = 0.72;
 const CONFETTI_COUNT     = 140;
 
@@ -211,10 +211,10 @@ function flashMeter() {
 }
 
 function setMicActiveUI() {
-  DOM.micBtn.querySelector('.btn__text').textContent = 'BLOOOWWW';
-  DOM.micBtn.querySelector('.btn__icon').textContent = '';
+  DOM.micBtn.querySelector('.btn__text').textContent = 'Listening\u2026';
+  DOM.micBtn.querySelector('.btn__icon').textContent = '🟢';
   DOM.micBtn.disabled = true;
-  DOM.hint.textContent = 'انفخي على كل الشمعات';
+  DOM.hint.textContent = 'Blow steadily into the mic \u2014 each breath extinguishes a candle.';
 }
 
 function setMicErrorUI() {
