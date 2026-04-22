@@ -22,8 +22,8 @@
 ══════════════════════════════════════════════════════════════ */
 
 const CANDLE_COUNT       = 5;
-const BLOW_RMS_THRESHOLD = 52;
-const BLOW_SUSTAIN_MS    = 200;
+const BLOW_RMS_THRESHOLD = 1;
+const BLOW_SUSTAIN_MS    = 250;
 const METER_SMOOTH       = 0.72;
 const CONFETTI_COUNT     = 140;
 
