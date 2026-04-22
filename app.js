@@ -12,7 +12,7 @@
 /* ── Constants ──────────────────────────────────────────────── */
 const CANDLE_COUNT       = 5;
 const BLOW_RMS_THRESHOLD = 1;    // 0–255 scale
-const BLOW_SUSTAIN_MS    = 300;   // ms of continuous blow to extinguish one candle
+const BLOW_SUSTAIN_MS    = 500;   // ms of continuous blow to extinguish one candle
 const METER_SMOOTH       = 0.72;  // exponential smoothing factor (0–1)
 const CONFETTI_COUNT     = 120;
 
@@ -524,11 +524,11 @@ function resetExperience() {
   // Re-enable mic button
   const btnText = DOM.micBtn.querySelector('.btn__text');
   const btnIcon = DOM.micBtn.querySelector('.btn__icon');
-  btnText.textContent = 'Enable Mic & Blow';
-  btnIcon.textContent = '🎤';
+  btnText.textContent = 'CLICK HERE AND BLOW';
+  btnIcon.textContent = '';
   DOM.micBtn.disabled = false;
   DOM.micBtn.style.background = '';
-  DOM.hint.textContent = 'Grant microphone access, then blow steadily to extinguish each candle.';
+  DOM.hint.textContent = 'BLOWWWWWW';
   DOM.meterFill.style.width = '0%';
   state.smoothedLevel = 0;
   state.isListening = false;
