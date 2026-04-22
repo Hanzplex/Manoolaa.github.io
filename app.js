@@ -254,8 +254,8 @@ function flashMeter() {
 function setMicActiveUI() {
   const btnText = DOM.micBtn.querySelector('.btn__text');
   const btnIcon = DOM.micBtn.querySelector('.btn__icon');
-  btnText.textContent = 'Listening…';
-  btnIcon.textContent = '🟢';
+  btnText.textContent = 'BLOWWW';
+  btnIcon.textContent = '';
   DOM.micBtn.disabled = true;
   DOM.hint.textContent = 'Blow steadily into the mic — each breath extinguishes a candle.';
   DOM.meterLabel.textContent = 'Blow strength';
